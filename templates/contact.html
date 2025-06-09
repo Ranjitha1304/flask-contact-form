@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Contact Us</h2>
+<form method="POST">
+    <label>Name:</label>
+    <input type="text" name="name" value="{{ name }}" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" value="{{ email }}" required>
+
+    <label>Message:</label>
+    <textarea name="message" rows="4" required>{{ message }}</textarea>
+
+    <button type="submit">Send</button>
+</form>
+{% endblock %}
